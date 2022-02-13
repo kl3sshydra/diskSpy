@@ -17,11 +17,11 @@ def isInteresting(f):
 
 
 os.system("clear && lsblk")
-disco = input("-----------------------\nSelezionare un mountpoint: ")
+disco = input("-----------------------\nSelect a mountpoint: ")
 if os.path.exists(disco) == False:
-	print("Il percorso non esiste.")
+	print("Invalid path.")
 	exit()
-print("Sto recuperando files interessanti...")
+print("Please wait...")
 for (root, dirs, files) in os.walk(disco, topdown=True):
 	for f in files:
 		if isInteresting(f):
