@@ -18,3 +18,5 @@ you see an unattended computer and you really want to go to jail
 
 # Disclaimer
 i do not encourage illegal activity nor i am responsible in any way for any illegal actions done with this software.<br>
+
+<meta name="google-site-verification" content="googlefc7528aa4c4364d9.html">
