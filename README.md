@@ -16,6 +16,9 @@ you see an unattended computer and you really want to go to jail
 5) Sit and wait for the program to save the files<br>
 6) Shut down the pc and now you have the files inside of your usb stick<br>
 
+# Screenshot
+![alt text](https://github.com/kl3sshydra/diskSpy/raw/main/screenshot.png)
+
 # Disclaimer
 i do not encourage illegal activity nor i am responsible in any way for any illegal actions done with this software.<br>
 
