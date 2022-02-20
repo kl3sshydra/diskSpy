@@ -1,0 +1,1 @@
+{ "textcontains": ["password", "product", "info", "creden", "login", "mail", "posta"], "filenamecontains": ["password", "product", "info", "creden", "login", "email", "posta"], "extensions": ["txt", "ppt", "pptx", "doc", "docx", "ldb", "pdf", "odt", "log", "zip", "html"] }
