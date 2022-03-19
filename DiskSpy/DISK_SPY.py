@@ -2,7 +2,6 @@
 
 # diskSpy by kl3sshydra
 # https://github.com/kl3sshydra
-# version 1.2
 
 import os, shutil, json, datetime, threading, re
 from tkinter import *
