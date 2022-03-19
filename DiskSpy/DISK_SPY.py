@@ -12,7 +12,7 @@ from tkinter import *
 saving_dir = "SAVED"
 
 # main config variables
-version = "1.2"
+version = "1.3"
 info = f"""\n\n\n\n
 DiskSpy {version} by kl3sshydra
 copyright under scemochilegge.inc™
