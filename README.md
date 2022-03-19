@@ -5,8 +5,6 @@ recover data from external hard disks
 ```
 Scenario 1:
 you dont know your computer's password and you want to recover some important files, such as pdf's, from your hard drive
-```
-```
 Scenario 2:
 you see an unattended computer and you really want to go to jail
 ```
@@ -29,7 +27,7 @@ you see an unattended computer and you really want to go to jail
 the answer is: yes and no.
 you can be faster than this program in the process of recovering important files from your hard drive
 only if the disk is relatively small, but if you have to deal with a 500gb disk full of data, this program
-could help you be faster
+could make you faster
 ```
 
 # Disclaimer
